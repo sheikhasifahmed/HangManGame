@@ -106,9 +106,12 @@ button:hover {
     margin-top: 30px;
   }
   .modal {
-    width: 95%;
+    width: 100%;
   }
   .modal h1 {
     font-size: 30px;
+  }
+  h1 {
+    font-size: large;
   }
 }

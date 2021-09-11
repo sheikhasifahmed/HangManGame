@@ -17,22 +17,62 @@ let hiddenStr;
 let arrRef;
 
 let words = [
-  "committee",
-  "library",
-  "procecutor",
-  "society",
-  "spectacles",
-  "armistice",
-  "lieutenant",
-  "padiatric",
-  "pneumonia",
-  "hospitality",
+  "canada",
+  "libya",
+  "Argentian",
+  "Bangladesh",
+  "Russia",
+  "Brazil",
+  "england",
+  "denmark",
+  "somalia",
+  "newzealand",
+  "sweeden",
+  "vietnam",
+  "Australia",
+  "srilanka",
+  "Ireland",
+  "Nepal",
+  "Indonesia",
+  "malaysia",
+  "jordan",
+  "switzerland",
+  "Belzium",
+  "france",
+  "india",
+  "iceland",
+  "singapore",
+  "djibouti",
+  "Italy",
+  "ethiopia",
+  "south korea",
+  "uganda",
+  "North korea",
+  "bhutan",
+  "maldives",
+  "afganistan",
+  "iran",
+  "turkey",
+  "sirya",
+  "Egypt",
+  "pakistan",
+  "palastine",
+  "sudan",
+  "bolivia",
+  "chile",
+  "china",
+  "myanmar",
+  "tzimbabwe",
+  "iraq",
+  "uzbekstan",
+  "ukraine",
+  "norway",
 ];
 
 function choosingWord() {
-  let index = Math.floor(Math.random() * 10);
+  let index = Math.floor(Math.random() * 50);
   word = words[index].toUpperCase();
-  console.log(word);
+  // console.log(word);
   hiddenStr = "".padStart(word.length * 2, "_ ");
   hiddenWord.innerText = hiddenStr;
   wordRef = "";
