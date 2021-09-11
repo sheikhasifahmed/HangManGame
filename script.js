@@ -16,6 +16,7 @@ let wordRef = "";
 let hiddenStr;
 let arrRef;
 
+/* countries array here*/
 let words = [
   "canada",
   "libya",
@@ -67,10 +68,30 @@ let words = [
   "uzbekstan",
   "ukraine",
   "norway",
+  "America",
+  "peru",
+  "mexico",
+  "taiwan",
+  "croatia",
+  "ghana",
+  "portugal",
+  "spain",
+  "qatar",
+  "ruanda",
+  "jamaica",
+  "greece",
+  "malta",
+  "chad",
+  "morocco",
+  "congo",
+  "venuzuela",
+  "paraguay",
+  "germany",
+  "austria",
 ];
 
 function choosingWord() {
-  let index = Math.floor(Math.random() * 50);
+  let index = Math.floor(Math.random() * 70);
   word = words[index].toUpperCase();
   // console.log(word);
   hiddenStr = "".padStart(word.length * 2, "_ ");
