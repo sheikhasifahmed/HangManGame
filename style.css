@@ -33,6 +33,11 @@ main {
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
+  order: 2;
+}
+
+#pic {
+  order: 1;
 }
 
 #ib h1 {
