@@ -129,7 +129,7 @@ function calculation(key) {
       gameOver.innerText = `Ops! You Lose The Game !!`;
       hiddenWord.innerText = word;
       hiddenWord.style.color = "red";
-      info.innerText = "YOU LOSE !";
+      info.innerText = "You lose !";
       infoLife.innerText = "";
       btnStart.style.display = "block";
     }
