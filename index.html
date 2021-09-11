@@ -9,54 +9,51 @@
   </head>
   <body>
     <div class="container">
-      <h1 style="color: navajowhite">
-        Guess the country by clicking the keys. You have 10 lives.
+      <h1 style="color: whitesmoke">
+        Guess the country by clicking the keys. You have 6 lives.
       </h1>
       <header>
-        <h1 id="hidden-word">HANGMAN</h1>
+        <h1 id="hidden-word" style="text-align: center">HANGMAN</h1>
       </header>
       <main>
         <div id="info-div">
-          <h1>
-            <span id="info">Life Remaining:</span>
+          <div id="ib">
+            <h1>
+              <span id="info">Life Remaining:</span>
+              <span id="info-life" style="color: darkred">6</span>
+            </h1>
+            <button id="btn-start" style="width: 150px">Start</button>
+          </div>
 
-            <span id="info-life" style="color: darkred">10</span>
-          </h1>
+          <img id="pic" src="images/pic6.png" alt="" />
         </div>
-
-        <div>
-          <div id="start-btn">
-            <button id="btn-start">Start</button>
-          </div>
-
-          <div id="btns">
-            <button class="btn-key">A</button>
-            <button class="btn-key">B</button>
-            <button class="btn-key">C</button>
-            <button class="btn-key">D</button>
-            <button class="btn-key">E</button>
-            <button class="btn-key">F</button>
-            <button class="btn-key">G</button>
-            <button class="btn-key">H</button>
-            <button class="btn-key">I</button>
-            <button class="btn-key">J</button>
-            <button class="btn-key">K</button>
-            <button class="btn-key">L</button>
-            <button class="btn-key">M</button>
-            <button class="btn-key">N</button>
-            <button class="btn-key">O</button>
-            <button class="btn-key">P</button>
-            <button class="btn-key">Q</button>
-            <button class="btn-key">R</button>
-            <button class="btn-key">S</button>
-            <button class="btn-key">T</button>
-            <button class="btn-key">U</button>
-            <button class="btn-key">V</button>
-            <button class="btn-key">W</button>
-            <button class="btn-key">X</button>
-            <button class="btn-key">Y</button>
-            <button class="btn-key">Z</button>
-          </div>
+        <div id="btns">
+          <button class="btn-key">A</button>
+          <button class="btn-key">B</button>
+          <button class="btn-key">C</button>
+          <button class="btn-key">D</button>
+          <button class="btn-key">E</button>
+          <button class="btn-key">F</button>
+          <button class="btn-key">G</button>
+          <button class="btn-key">H</button>
+          <button class="btn-key">I</button>
+          <button class="btn-key">J</button>
+          <button class="btn-key">K</button>
+          <button class="btn-key">L</button>
+          <button class="btn-key">M</button>
+          <button class="btn-key">N</button>
+          <button class="btn-key">O</button>
+          <button class="btn-key">P</button>
+          <button class="btn-key">Q</button>
+          <button class="btn-key">R</button>
+          <button class="btn-key">S</button>
+          <button class="btn-key">T</button>
+          <button class="btn-key">U</button>
+          <button class="btn-key">V</button>
+          <button class="btn-key">W</button>
+          <button class="btn-key">X</button>
+          <button class="btn-key">Y</button>
+          <button class="btn-key">Z</button>
         </div>
       </main>
       <div class="overlay"></div>

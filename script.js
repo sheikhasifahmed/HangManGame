@@ -9,8 +9,8 @@ const info = document.getElementById("info");
 const infoLife = document.getElementById("info-life");
 
 const btnStart = document.getElementById("btn-start");
-
-let life = 10;
+const pic = document.getElementById("pic");
+let life = 6;
 let word;
 let wordRef = "";
 let hiddenStr;
@@ -19,7 +19,7 @@ let arrRef;
 let words = [
   "canada",
   "libya",
-  "Argentian",
+  "Argentina",
   "Bangladesh",
   "Russia",
   "Brazil",
@@ -62,7 +62,7 @@ let words = [
   "chile",
   "china",
   "myanmar",
-  "tzimbabwe",
+  "zimbabwe",
   "iraq",
   "uzbekstan",
   "ukraine",
@@ -83,9 +83,10 @@ function choosingWord() {
 
   btnStart.style.display = "none";
   hiddenWord.style.color = "cornsilk";
-  life = 10;
+  life = 6;
   info.innerText = "Life Remaining:";
   infoLife.innerText = life;
+  pic.setAttribute("src", `images/pic${life}.png`);
 }
 
 btnStart.addEventListener("click", choosingWord);
@@ -107,6 +108,7 @@ function calculation(key) {
     while (isCharFound === true) checkChar(c);
     if (charFound == 0) {
       life--;
+      pic.setAttribute("src", `images/pic${life}.png`);
       infoLife.innerText = life;
     }
 
@@ -115,18 +117,17 @@ function calculation(key) {
       modal.style.display = "block";
       gameOver.innerText = `Great!! You Won The Game !!
     Your Score: ${life}`;
-      hiddenWord.innerText = wordRef;
+      hiddenWord.innerText = word;
       hiddenWord.style.color = "Green";
       info.innerText = `Your Score: `;
 
       btnStart.style.display = "block";
     }
     if (life == 0) {
-      console.log("Game Over");
       overlay.style.display = "block";
       modal.style.display = "block";
       gameOver.innerText = `Ops! You Lose The Game !!`;
-      hiddenWord.innerText = wordRef;
+      hiddenWord.innerText = word;
       hiddenWord.style.color = "red";
       info.innerText = "YOU LOSE !";
       infoLife.innerText = "";
