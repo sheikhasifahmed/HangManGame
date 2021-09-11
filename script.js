@@ -110,7 +110,10 @@ function choosingWord() {
   pic.setAttribute("src", `images/pic${life}.png`);
 }
 
-btnStart.addEventListener("click", choosingWord);
+btnStart.addEventListener("click", function () {
+  choosingWord();
+  btnKey.forEach((key) => (key.disabled = false));
+});
 
 let charFound = 0;
 let isCharFound;
@@ -118,6 +121,7 @@ let isCharFound;
 btnKey.forEach((key) =>
   key.addEventListener("click", function () {
     calculation(key);
+    key.disabled = true;
   })
 );
 
